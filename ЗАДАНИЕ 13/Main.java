@@ -58,7 +58,7 @@ class Store {
         Department department = departments.get(name);
         if (department != null) {
             System.out.println("Текущие часы работы отдела " + name + ": " + department.workingHours);
-            System.out.print("Введите новые часы работы в формате 00:00-00:00: ");
+            System.out.print("Введите новые часы работы: ");
             String newWorkingHours = scanner.nextLine();
 
             System.out.println("Текущее название отдела " + name + ": " + department.name);
@@ -167,7 +167,7 @@ public class Main {
                     case 1:
                         System.out.print("Введите название отдела: ");
                         String departmentName = scanner.nextLine();
-                        System.out.print("Введите часы работы отдела в формате 00:00-00:00: ");
+                        System.out.print("Введите часы работы отдела: ");
                         String workingHours = scanner.nextLine();
                         store.addDepartment(departmentName, workingHours);
                         break;
